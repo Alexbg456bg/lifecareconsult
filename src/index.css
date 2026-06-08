@@ -1,0 +1,96 @@
+:root {
+  --color-bg: #f7f3ef;
+  --color-surface: rgba(255, 255, 255, 0.78);
+  --color-text: #47413e;
+  --color-text-strong: #141414;
+  --color-text-muted: #6a615d;
+  --color-accent: #c91010;
+  --shadow-soft: 0 24px 60px rgba(26, 18, 18, 0.08);
+  --font-body: 'Segoe UI', 'Trebuchet MS', sans-serif;
+  --font-heading: Georgia, 'Times New Roman', serif;
+
+  font-family: var(--font-body);
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--color-text);
+  background:
+    radial-gradient(circle at top left, rgba(201, 15, 15, 0.08), transparent 28%),
+    radial-gradient(circle at right, rgba(0, 0, 0, 0.05), transparent 22%),
+    linear-gradient(180deg, #fbf9f7 0%, #f3ede8 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--color-text);
+  background: var(--color-bg);
+  overflow-x: hidden;
+}
+
+a,
+button,
+input {
+  font: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  min-height: 100svh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-text-strong);
+  font-family: var(--font-heading);
+  line-height: 1.02;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: clamp(2.8rem, 6vw, 5.4rem);
+  letter-spacing: -0.05em;
+  line-height: 0.98;
+}
+
+h2 {
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+  letter-spacing: -0.04em;
+}
+
+h3 {
+  font-size: 1.3rem;
+  letter-spacing: -0.03em;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+}
