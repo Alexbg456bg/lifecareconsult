@@ -215,13 +215,13 @@ export function AboutPage() {
           </p>
         </div>
         <figure className="about-hero__image image-frame">
-          <img src="/about-hero.jpeg" alt="Екип на Life Care Consult в защитно облекло на работен обект" />
+          <img src="/about-hero-ddd.jpeg" alt="Екип на ДДД компанията в защитно оборудване" />
         </figure>
       </header>
 
       <section className="about-story section-reveal" aria-labelledby="about-story-title">
         <figure className="about-story__image image-frame">
-          <img src="/about-team.jpeg" alt="Екип със защитни костюми и професионално оборудване" />
+          <img src="/about-story-ddd.jpeg" alt="ДДД специалисти при обработка на обект" />
         </figure>
         <article className="about-story__copy">
           <p className="eyebrow">Кои сме ние</p>
