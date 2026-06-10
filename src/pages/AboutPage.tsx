@@ -215,7 +215,11 @@ export function AboutPage() {
           </p>
         </div>
         <figure className="about-hero__image image-frame">
-          <img src="/about-hero-ddd.jpeg" alt="Екип на ДДД компанията в защитно оборудване" />
+          <img
+            className="about-hero__photo"
+            src="/about-hero-treatment.jpeg"
+            alt="Екип на ДДД компанията в защитно оборудване"
+          />
         </figure>
       </header>
 

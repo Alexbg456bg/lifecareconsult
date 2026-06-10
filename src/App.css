@@ -1025,6 +1025,10 @@
   display: block;
 }
 
+.about-hero__photo {
+  object-position: 34% center;
+}
+
 .about-story {
   display: grid;
   grid-template-columns: minmax(22rem, 0.88fr) minmax(0, 1fr);
