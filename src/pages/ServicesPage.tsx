@@ -23,7 +23,7 @@ export function ServicesPage() {
                 <img src={pest.image} alt={pest.alt} loading="lazy" />
               </div>
               <div className="pest-showcase__copy">
-                <span className="pest-showcase__label">ОБРАБОТКА И КОНТРОЛ</span>
+                <span className="pest-showcase__label">{'label' in pest ? pest.label : 'ОБРАБОТКА И КОНТРОЛ'}</span>
                 <h2>{pest.name}</h2>
                 <p>{pest.text}</p>
               </div>
