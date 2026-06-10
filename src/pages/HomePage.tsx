@@ -125,9 +125,6 @@ export function HomePage() {
               <span className="home-service-card__mark">0{index + 1}</span>
               <h3>{service.title}</h3>
               <p>{service.text}</p>
-              <Link className="home-card-link" to="/uslugi">
-                Научи повече
-              </Link>
             </article>
           ))}
         </div>

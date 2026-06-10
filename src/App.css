@@ -662,19 +662,6 @@
   background: rgba(200, 15, 15, 0.09);
 }
 
-.home-card-link {
-  display: inline-flex;
-  width: fit-content;
-  margin-top: auto;
-  color: var(--color-accent);
-  font-weight: 800;
-  text-decoration: none;
-}
-
-.home-card-link:hover {
-  color: var(--color-text-strong);
-}
-
 .home-process {
   grid-template-columns: repeat(4, minmax(0, 1fr));
   position: relative;
