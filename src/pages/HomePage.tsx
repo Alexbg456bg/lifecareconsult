@@ -52,14 +52,22 @@ const workSteps = [
 const pestDescriptions: Record<string, string> = {
   Хлебарки: 'Обработка на кухни, санитарни помещения, мазета и общи части.',
   Дървеници: 'Прецизно третиране на матраци, мебели, фуги и труднодостъпни места.',
-  Комари: 'Сезонна обработка на дворове, зелени площи, тераси и входове.',
   Мравки: 'Контрол на маршрути, гнезда, первази и външни подходи към обекта.',
   'Мишки и плъхове': 'Дератизация с капани и примамки, поставени на стратегически места.',
 }
 
 const homePests = featuredPests.slice(0, 5).map((pest) => ({
   ...pest,
-  text: pestDescriptions[pest.name] ?? pest.text,
+  ...(pest.name === 'Комари'
+    ? {
+        name: 'Кърлежи',
+        image: 'https://commons.wikimedia.org/wiki/Special:Redirect/file/Adult_deer_tick.jpg',
+        alt: 'Макро снимка на кърлеж върху зелено листо',
+        text: 'Професионална обработка на дворове, паркове, тревни площи и зелени зони срещу кърлежи.',
+      }
+    : {
+        text: pestDescriptions[pest.name] ?? pest.text,
+      }),
 }))
 
 export function HomePage() {
