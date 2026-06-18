@@ -42,13 +42,13 @@ export function Layout() {
               <img
                 className="brand-logo"
                 src="/logo.png"
-                alt="LC ДДД Услуги лого"
+                alt="Професионални ДДД услуги лого"
                 onError={() => setLogoMissing(true)}
               />
             )}
           </span>
           <span className="brand-copy">
-            <strong>LC ДДД Услуги</strong>
+            <strong>Професионални ДДД услуги</strong>
             <span>Дезинфекция • Дезинсекция • Дератизация</span>
           </span>
         </NavLink>
@@ -113,7 +113,7 @@ export function Layout() {
 
       <footer className="footer">
         <div>
-          <strong>LC ДДД Услуги</strong>
+          <strong>Професионални ДДД услуги</strong>
           <p>Професионални решения за контрол на вредители и хигиенна обработка.</p>
         </div>
         <div>

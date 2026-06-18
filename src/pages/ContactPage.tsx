@@ -14,7 +14,7 @@ export function ContactPage() {
       <section className="section reveal">
         <div className="contact-layout">
           <article className="glass-card contact-panel contact-panel--accent">
-            <span className="contact-panel__label">LC ДДД Услуги</span>
+            <span className="contact-panel__label">Професионални ДДД услуги</span>
             <h2>Контакт</h2>
             <p>
               За дезинфекция, дезинсекция и дератизация в жилищни и търговски обекти.
