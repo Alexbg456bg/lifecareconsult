@@ -112,14 +112,36 @@ export function Layout() {
       <Outlet />
 
       <footer className="footer">
-        <div>
-          <strong>Професионални ДДД услуги</strong>
+        <section className="footer__column footer__column--company" aria-labelledby="footer-company">
+          <h2 id="footer-company">Професионални ДДД услуги</h2>
           <p>Професионални решения за контрол на вредители и хигиенна обработка.</p>
-        </div>
-        <div>
-          <a href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}>{contactDetails.phone}</a>
-          <a href={`mailto:${contactDetails.email}`}>{contactDetails.email}</a>
-        </div>
+          <div className="footer__tags" aria-label="Основни услуги">
+            <span>Дезинфекция</span>
+            <span>Дезинсекция</span>
+            <span>Дератизация</span>
+          </div>
+        </section>
+
+        <nav className="footer__column footer__nav" aria-labelledby="footer-navigation">
+          <h2 id="footer-navigation">Навигация</h2>
+          <div className="footer__links">
+            {navItems.map((item) => (
+              <NavLink key={item.to} to={item.to} className="footer__link">
+                {item.label}
+              </NavLink>
+            ))}
+          </div>
+        </nav>
+
+        <section className="footer__column footer__contacts" aria-labelledby="footer-contacts">
+          <h2 id="footer-contacts">Контакти</h2>
+          <a className="footer__contact" href={`tel:${contactDetails.phone.replace(/\s+/g, '')}`}>
+            {contactDetails.phone}
+          </a>
+          <a className="footer__contact" href={`mailto:${contactDetails.email}`}>
+            {contactDetails.email}
+          </a>
+        </section>
       </footer>
 
       <div className="mobile-action-bar">
